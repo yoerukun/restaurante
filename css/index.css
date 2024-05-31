@@ -1,0 +1,963 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .cabecerafijo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #1a222986;
+    color: #fff;
+    padding: 20px 30px;
+    z-index: 1000; 
+    /* posicion encima del resto del contenido */
+  }
+  
+  .cajaprincipal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+  }
+  
+  .logo img {
+    height: 100px; /* Ajusta la altura según tu necesidad */
+  }
+  
+  .menubotones ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menubotones ul li {
+    display: inline-block;
+    margin-left: 20px;
+    
+  }
+  
+  .menubotones ul li:first-child {
+    text-decoration: solid;
+    margin-left: 0;
+    /* es un selector en CSS que apunta
+     al primer elemento <li> que es hijo directo de su contenedor*/
+  }
+  
+  .menubotones ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menubotones ul li a:hover {
+    background-color: #774707;
+  }
+
+
+
+/*aquí inicia el main principal*/
+
+/*aquí estilos para el cartel*/
+.cartel {
+    background-color: #faefce;
+    padding: 20 0;
+    text-align: center;
+    background-image: url('../image_parcial/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+
+
+  }
+  
+  .carteluno{
+    max-width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    border-radius: 5px;
+    color: #ffffff;
+
+  }
+  
+  h1 {
+    font-size: 120px;
+    margin-top: 85px;
+    margin-bottom: 20px;
+    color:#774707;
+  }
+  
+  h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #774707;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 15px 40px;
+    margin-top: 25px;
+    background-color: #774707;
+    color: #fffbfb;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+ 
+  .btn:hover {
+    background-color: #ffffff;
+    color: #774707;
+  }
+
+/*aquí estilos para la primera sección inicio*/
+
+.primera-seccion {
+  background-image: url('../image_parcial/ambiente02.jpg'); 
+  /* Ruta de tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-color: #f2f2f2;
+  padding: 0 0;
+  text-align: center;
+}
+  
+  .contenedor01{
+    max-width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgba(17, 17, 17, 0.6); 
+    /* Cambia el valor alpha para ajustar la opacidad */
+    margin-left: 220px;
+    margin-right: 150px;
+
+  }
+  
+  .contenedor01 p {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+
+
+  /*creando la seccion 02 del contenido de
+  la pagina*/
+  .segunda-seccion {
+    background-image: url('../image_parcial/ambientea.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: #f5eaea;
+    padding: 50px 0;
+    border-radius: 5px;
+    height: 500px;
+      overflow: hidden;
+      box-shadow: 3px 4px 8px rgba(168, 13, 13, 0.1);
+  }
+
+  .segunda-seccion h2 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    
+  }
+
+  .segunda-seccion p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    line-height:20px ;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo del cuadro con transparencia */
+    padding: 20px; /* Añade un espacio interno alrededor del texto */
+    display: inline-block; /* Hace que el cuadro se ajuste al contenido */
+    border-radius: 10px; /* Redondea las esquinas del cuadro */
+    display: flex;
+    justify-content: center;
+  }
+ .contenedordos {
+    max-width: 1200px;
+    height: 350px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+  }
+
+  .division {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .imagen img {
+    max-width: 100%;
+    height: 300px;
+    border: 10 solid #5f4e4e;
+    border-radius: 10px;
+    width: 50%;
+    transition: transorm 0.5s ease, opacity 0.50s ease;
+  }
+
+  .imagen:hover img {
+    transform: scale(1.1);
+    opacity: 0.2
+  }
+
+  .division h1 {
+    font-size: 36px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+ .division h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .division p {
+    font-size: 16px;
+    line-height:20px ;
+    margin-bottom: 30px;
+  }
+  .division a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #774707;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .division a:hover {
+    background-color: #ffffff;
+    color: #774707;
+    }
+    
+
+
+/*creando la seccion 03 del contenido de
+  la pagina*/
+  .tercera-seccion {
+    background-image: url('../image_parcial/ambienteb.JPG');
+    background-position: center;
+    background-size: cover;
+    background-color: #f5eaea;
+    padding: 50px 0;
+    border-radius: 5px;
+    height: 500px;
+  }
+
+  .tercera-seccion h2 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+
+  .tercera-seccion p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    line-height:20px ;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo del cuadro con transparencia */
+    padding: 20px; /* Añade un espacio interno alrededor del texto */
+    display: inline-block; /* Hace que el cuadro se ajuste al contenido */
+    border-radius: 10px; /* Redondea las esquinas del cuadro */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+  }
+ .contenedortres {
+    max-width: 1200px;
+    height: 350px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .division {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .imagen img {
+    max-width: 100%;
+    height: 300px;
+    border: 10 solid #5f4e4e;
+    border-radius: 10px;
+  }
+  .division h1 {
+    font-size: 36px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+ .division h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .division p {
+    font-size: 16px;
+    line-height:20px ;
+    margin-bottom: 30px;
+  }
+  .division a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #774707;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .division a:hover {
+    background-color: #ffffff;
+    color: #774707;
+  }
+
+  /*creando la seccion 04 del contenido de
+  la pagina*/
+
+  .cuarta-seccion {
+    background-image: url('../image_parcial/ambientec.JPG');
+    background-position: center;
+    background-size: cover;
+    background-color: #f5eaea;
+    padding: 50px 0;
+    border-radius: 5px;
+    height: 500px;
+  }
+
+  .cuarta-seccion h2 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+
+  .cuarta-seccion p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    line-height:20px ;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo del cuadro con transparencia */
+    padding: 20px; /* Añade un espacio interno alrededor del texto */
+    display: inline-block; /* Hace que el cuadro se ajuste al contenido */
+    border-radius: 10px; /* Redondea las esquinas del cuadro */
+    background-position: center;
+    display: flex;
+    justify-content: center;
+  }
+ .contenedorcuatro {
+    max-width: 1200px;
+    height: 350px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .division {
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+  }
+  .imagen img {
+    max-width: 100%;
+    height: 300px;
+    border: 10 solid #5f4e4e;
+    border-radius: 10px;
+  }
+  .division h1 {
+    font-size: 36px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+ .division h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .division p {
+    font-size: 16px;
+    line-height:20px ;
+    margin-bottom: 30px;
+  }
+  .division a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #774707;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .division a:hover {
+    background-color: #ffffff;
+    color: #774707;
+  }
+
+  /*creando la seccion 05 del contenido de
+  la pagina*/
+
+  .quinta-seccion {
+    background-image: url('../image_parcial/fondo.jpg'); 
+    /* Ruta de tu imagen de fondo */
+    background-size: 3000px;
+    background-color: #ecfafb;
+    padding: 50px 0;
+    border-radius: 5px;
+       
+  }
+
+  .quinta-seccion h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color:#774707;
+  }
+
+  .quinta-seccion p {
+    color:#774707;
+    text-align: center;
+    font-size: 18px;
+    line-height:20px ;
+    margin-bottom: 10px;
+  }
+
+  .contenedorcinco {
+    max-width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+   
+  }
+
+  .column {
+    flex: 1;
+    margin-top: 50px;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .column img {
+    max-width: 100%;
+    height: 380px;
+    padding: 5px;
+    border: 5px solid #7a1d35;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #333;
+  }
+
+  .column a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #3ebbf5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .column a:hover {
+    background-color: #000000;
+  }
+
+
+  .botonlibre02 {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .quinta-seccion .botonlibre02 a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #dfa209;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease
+  }
+
+  .quinta-seccion .botonlibre02 a:hover {
+    background-color: #000000;
+  }
+
+
+ /*creando la seccion 06 del contenido de
+  la pagina*/
+
+  .sexta-seccion {
+    background-image: url('../image_parcial/ambiente01.jpg');
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    padding: 80px 50;
+    height: 1800px;
+    overflow: hidden;
+    box-shadow: 3px 4px 8px rgba(168, 13, 13, 0.1);
+  }
+
+  .sexta-seccion h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    color:#ffffff;
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo del cuadro con transparencia */
+    padding: 20px;
+    border-radius: 10px; /* Redondea las esquinas del cuadro */
+  }
+
+  .sexta-seccion p {
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    line-height:20px ;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.452); /* Color de fondo del cuadro con transparencia */
+    padding: 10px;
+    border-radius: 10px; /* Redondea las esquinas del cuadro */
+    width: 100%; /* Anchura del cuadro */
+    margin: auto; /* Centra horizontalmente */
+  }
+
+  .contenedorseis {
+    max-width: 1000px;
+    height: 750px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content:space-around;
+    display: flex;
+    gap: 20px;
+   
+  }
+
+  .column {
+    flex-basis: 300px;
+    margin-top: 5px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .column img {
+    max-width: 100%;
+    height: 220px;
+    padding: 10px;
+    border: 5px solid #774707;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #333;
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transorm 0.2s ease, opacity 0.3s ease;
+  }
+
+  .column:hover img {
+    transform: scale(1.1);
+    opacity: 0.8
+  }
+
+  .column p {
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 20px;
+    background-color: rgba(255, 255, 255, 0.452); /* Color de fondo del cuadro con transparencia */
+    padding: 10px;
+    border-radius: 10px; /* Redondea las esquinas del cuadro */
+    text-align: center;
+  }
+
+  .column a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #3ebbf5;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+
+  .column a:hover {
+    background-color: #000000;
+  }
+
+/*creando estilos para la pagina de CRIOLLOS */
+
+.criollos-seccion {
+  background-image: url('../image_parcial/ubicación.jpg');
+  background-position: center;
+  background-size: 1700px;
+  padding: 250px 0;
+  border-radius: 5px;
+
+}
+
+.criollos-seccion h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.criollos-seccion p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  line-height:20px ;
+  margin-bottom: 10px;
+}
+
+.contenedorcriollos {
+  max-width: 2500px;
+  height: 1050px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content:space-around;
+ 
+}
+
+.criollos {
+  flex-basis: 450px;
+  margin-top: 20px;
+  padding: 25px;
+  text-align: center;
+}
+
+.criollos img {
+  max-width: 100%;
+  height: 350px;
+  padding: 5px;
+  border: 4px solid #774707;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px #ffd900;
+  
+}
+
+.criollos p {
+  font-size: 14px;
+  margin-top: 20px;
+  background-color: #1a222986;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: justify;
+  line-height: 20px;
+  text-align: center;
+}
+
+.criollos a {
+  display: inline-block;
+  padding: 10px 50px;
+  background-color: #3ebbf5;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.criollos a:hover {
+  background-color: #000000;
+}
+
+
+.botonlibre02 {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.criollos-seccion .botonlibre02 a {
+  display: inline-block;
+  padding: 10px 50px;
+  background-color: #774707;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease
+}
+
+.criollos-seccion .botonlibre02 a:hover {
+  background-color: #ffffff;
+  color: #774707;
+} 
+
+
+  /*creando estilos para la pagina de CÓCTELES */
+
+  .cocteles-seccion {
+    background-image: url('../image_parcial/ubicación.jpg');
+    background-position: center;
+    background-size: 1700px;
+    padding: 250px 0;
+    border-radius: 5px;
+  }
+  
+  .cocteles-seccion h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .cocteles-seccion p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    line-height:20px ;
+    margin-bottom: 10px;
+  }
+  
+  .contenedorcocteles {
+    max-width: 2500px;
+    height: 1050px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content:space-around;
+   
+  }
+  
+  .cocteles {
+    flex-basis: 450px;
+    margin-top: 20px;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  .cocteles img {
+    max-width: 100%;
+    height: 350px;
+    padding: 5px;
+    border: 4px solid #774707;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #ffd900;
+  }
+  
+  .cocteles p {
+    font-size: 14px;
+    margin-top: 20px;
+    background-color: #1a222986;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: justify;
+    line-height: 20px;
+    text-align: center;
+  }
+  
+  .cocteles a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #3ebbf5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .cocteles a:hover {
+    background-color: #000000;
+  }
+  
+  
+  .botonlibre02 {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .cocteles-seccion .botonlibre02 a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #774707;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease
+  }
+  
+  .cocteles-seccion .botonlibre02 a:hover {
+    background-color: #ffffff;
+    color: #774707;
+  } 
+
+
+  /*creando estilos para la pagina de PIQUEOS */
+  
+  .piqueos-seccion {
+    background-image: url('../image_parcial/ubicación.jpg');
+    background-position: center;
+    background-size: 1700px;
+    padding: 250px 0;
+    border-radius: 5px;
+  }
+  
+  .piqueos-seccion h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .piqueos-seccion p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    line-height:20px ;
+    margin-bottom: 10px;
+  }
+  
+  .contenedorpiqueos {
+    max-width: 2500px;
+    height: 1050px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content:space-around;
+   
+  }
+  
+  .piqueos {
+    flex-basis: 450px;
+    margin-top: 20px;
+    padding: 25px;
+    text-align: center;
+    
+  }
+  
+  .piqueos img {
+    max-width: 100%;
+    height: 350px;
+    padding: 5px;
+    border: 4px solid #774707;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #ffd900;
+  }
+  
+  .piqueos p {
+    font-size: 14px;
+    margin-top: 20px;
+    background-color: #1a222986;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: justify;
+    line-height: 20px;
+    text-align: center;
+   
+  }
+  
+  .piqueos a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #3ebbf5;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .piqueos a:hover {
+    background-color: #000000;
+  }
+  
+  
+  .botonlibre02 {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .piqueos-seccion .botonlibre02 a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #774707;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease
+  }
+  
+  .piqueos-seccion .botonlibre02 a:hover {
+    background-color: #ffffff;
+    color: #774707;
+  } 
+
+
+  /*creando el Footer - pie de pagina final de
+  la pagina*/
+  
+  .footer {
+    background-image: url('../image_parcial/fondo.jpg'); 
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .filas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  h2, p {
+    color: #774707;
+    margin: 0;
+  }
+  
+  .social-icons1 {
+    display: flex;
+  }
+  
+
+  /* Aquí puedes agregar tu CSS */
+  .social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons li {
+    display: inline-block;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #774707;
+    font-size: 50px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #000000;/* Cambia esto según el color que desees para el hover */
+}
+
+  

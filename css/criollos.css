@@ -1,0 +1,34 @@
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(216, 87, 87);
+}
+
+.contenedorcriollos {
+  display: flex;
+  gap: 20px;
+}
+
+
+.criollos-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 3px 4px 8px rgba(168, 13, 13, 0.1);
+}
+
+.criollos img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transorm 0.2s ease, opacity 0.3s ease;
+}
+
+.criollos:hover img {
+  transform: scale(1.1);
+  opacity: 0.8
+}
